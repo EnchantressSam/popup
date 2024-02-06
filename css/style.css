@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+base {
+  color: #19181a;
+  color: #479461;
+  color: #cebc81;
+  color: #a16e83;
+  color: #b19f9e;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: #b19f9e;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #19181a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 60px;
+  background-color: #a16e83;
+  color: #b19f9e;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.popup {
+  width: 400px;
+  background-color: #cebc81;
+  text-align: center;
+  color: #a16e83;
+  padding: 0 30px 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  border-radius: 6px;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 600;
+  margin: 30px 0 10px;
+}
+
+.popup p {
+  font-size: 19px;
+  margin-bottom: 30px;
+
+}
+
+.popup button {
+  background: rgb(71, 148, 97);
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  border-radius: 40px;
+  padding: 10px;
+  color: #cebc81;
+  font-size: 20px;
+  box-shadow: 0 5px 5px rgba(71, 148, 97, 0.4);
+
+}
+
+.popup img {
+  width: 60px;
+  margin-top: -20px;
+
+}
